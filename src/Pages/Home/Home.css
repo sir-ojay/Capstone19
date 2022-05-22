@@ -1,0 +1,18 @@
+.home{
+    margin-left: 20%;
+    padding-inline: 4%;
+    background-color: rgb(248, 251, 252);
+    padding-top: 2.5%;
+    
+ }
+ #home{
+    background-color: rgb(248, 251, 252);
+
+ }
+ .top{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .order{
+     margin-top: 5%;
+ }

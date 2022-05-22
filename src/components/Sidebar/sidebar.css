@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*{
+    margin: 0;
+}
+.sideBar{
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+      position: fixed;
+    left: 0;
+    float: left;
+}
+.sideBar ul{
+    background-color: rgba(228, 65, 15, 0.603);
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    float: left;
+    
+}
+
+
+.sideBar ul li{
+    list-style: none;
+    margin-block: 25%;
+    margin-inline: 2%;
+    font-size: 17px;
+    color: rgb(183, 211, 240);
+    font-weight: 500;
+}
+.sideBar ul li:hover{
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    background-color: rgba(0, 225, 255, 0);
+    transition: all 200ms ease-in-out;
+
+}
+
+
+
+.sideBar ul h1{
+    font-size: 24px;
+    color: whitesmoke;
+    text-shadow:2px 2px 7px #ed3eee;
+}
+.icons{
+    font-size: 20px;
+    margin-right: 12px;
+    color: rgb(182, 188, 194);
+}
+.icons:hover{
+    font-size: 25px;
+    background-color: rgba(0, 225, 255, 0);
+}
+
+
+@media (max-width: 768px) {
+    #sidebar{
+        display: none;
+    }
+    #sidebarClose{
+        display: block;
+        width: 80px;
+        text-align: center; 
+    }
+    .sideBar ul h1{
+        font-size: 17px;
+        margin-inline:0% ;
+    }
+    
+    .sideBar ul li{
+      
+        margin-block: 60%;
+        margin-inline: 0%;
+    }
+    .icons{
+        font-size: 25px;
+        margin-right: 40px;
+        color: rgb(182, 188, 194);
+    }
+    #topp{
+        margin-top: 70px;
+    }
+}

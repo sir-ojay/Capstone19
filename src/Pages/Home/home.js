@@ -8,17 +8,15 @@ const Home = () => {
   return (
     <div id='home'>
       <Sidebar/>
-    <div className='home'>
-     <div className='top'>
-     <Overview/>
-     
-       
-     </div>
-     <div className='order'>
-       <Orders/>
-     </div>
-     
-    </div>
+     <div className='home'>
+       <div className='top'>
+        <Overview/>
+       </div>
+
+        <div className='order'>
+         <Orders/>
+        </div>
+      </div>
     
     </div>
   )

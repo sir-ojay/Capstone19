@@ -1,28 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *{
     margin: 0;
+    box-sizing: border-box;
 }
+
 .sideBar{
+    /* display: block; */
     font-family: "Open Sans", sans-serif;
     height: 100vh;
       position: fixed;
     left: 0;
     float: left;
+   
 }
 .sideBar ul{
     background-color: rgba(228, 65, 15, 0.603);
     width: 220px;
-    height: 100%;
+  
     position: fixed;
     left: 0;
     float: left;
-    
+    margin-left: 0;
 }
 
 
 .sideBar ul li{
     list-style: none;
-    margin-block: 25%;
+    margin-block: 40%;
+    /* padding-bottom: 38%; */
     margin-inline: 2%;
     font-size: 17px;
     color: rgb(183, 211, 240);
@@ -30,10 +35,10 @@
 }
 .sideBar ul li:hover{
     color: rgb(0, 0, 0);
-    font-size: 23px;
+    font-size: 20px;
     background-color: rgba(0, 225, 255, 0);
     transition: all 200ms ease-in-out;
-
+cursor:zoom-out;
 }
 
 
@@ -56,29 +61,100 @@
 
 @media (max-width: 768px) {
     #sidebar{
-        display: none;
+        display:flex ;
+        flex-direction: column;
     }
-    #sidebarClose{
+    .sideBar ul{
+        background-color: rgba(228, 65, 15, 0.603);
+        width:22%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        float: left;
+        
+    }
+    /* #sidebarClose{
         display: block;
         width: 80px;
         text-align: center; 
-    }
+    } */
     .sideBar ul h1{
-        font-size: 17px;
-        margin-inline:0% ;
-    }
+        visibility: visible;
+        font-size: 0.8em;
+        text-align:left;
+        margin: 0;
+        word-wrap:normal;
+         }
     
     .sideBar ul li{
-      
-        margin-block: 60%;
-        margin-inline: 0%;
+      display: flex;
+      flex-direction: column;
+      /* list-style: none;
+     font-weight: 100; */
+    visibility: hidden;
+     
+     margin-block: 40%;
+     margin-inline: 2%;
+     font-size: 1em;
+     color: rgb(183, 211, 240);
+  
     }
-    .icons{
-        font-size: 25px;
-        margin-right: 40px;
-        color: rgb(182, 188, 194);
+    .sideBar ul li .icons{
+        visibility: visible;
+        font-size: 1em;
+     text-align: center;
+        color: rgb(45, 166, 214);
     }
-    #topp{
+    /* #topp{
         margin-top: 70px;
+    } */
+}
+@media (max-width:400px){
+    #sidebar{
+        display:flex ;
+        flex-direction: column;
+    }
+    .sideBar ul{
+        background-color: rgba(228, 65, 15, 0.603);
+        /* width:5%; */
+        height: 100%;
+        position: fixed;
+        left: 0;
+        float: left;
+        
+    }
+    /* #sidebarClose{
+        display: block;
+        width: 80px;
+        text-align: center; 
+    } */
+    .sideBar ul h1{
+        visibility: visible;
+        font-size: 0.6em;
+        text-align:left;
+        margin: 0;
+        word-wrap:normal;
+         }
+    
+    .sideBar ul li{
+      display: flex;
+      flex-direction: column;
+      /* list-style: none;
+     font-weight: 100; */
+    visibility: hidden;
+     
+     margin-block: 20%;
+     margin-inline: 2%;
+     font-size: 1em;
+     color: rgb(183, 211, 240);
+  
+    }
+    .sideBar ul li .icons{
+        visibility: visible;
+        font-size: 1em;
+        margin-block: 20%;
+     margin-inline: 2%;
+     text-align: center;
+        color: rgb(45, 166, 214);
     }
 }

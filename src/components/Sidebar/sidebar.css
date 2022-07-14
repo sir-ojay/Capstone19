@@ -5,24 +5,24 @@
 }
 
 .sideBar{
-    /* display: block; */
+    display: block;
     font-family: "Open Sans", sans-serif;
-    height: 100vh;
       position: fixed;
     left: 0;
     float: left;
+    background-color: red;
    
 }
 .sideBar ul{
-    background-color: rgba(228, 65, 15, 0.603);
+    background-color:white;
     width: 220px;
-  
+    height: 100vh;
     position: fixed;
     left: 0;
     float: left;
     margin-left: 0;
-}
 
+}
 
 .sideBar ul li{
     list-style: none;
@@ -35,13 +35,11 @@
 }
 .sideBar ul li:hover{
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgba(0, 225, 255, 0);
     transition: all 200ms ease-in-out;
 cursor:zoom-out;
 }
-
-
 
 .sideBar ul h1{
     font-size: 24px;
@@ -65,7 +63,7 @@ cursor:zoom-out;
         flex-direction: column;
     }
     .sideBar ul{
-        background-color: rgba(228, 65, 15, 0.603);
+    background-color: white; 
         width:22%;
         height: 100%;
         position: fixed;
@@ -73,14 +71,10 @@ cursor:zoom-out;
         float: left;
         
     }
-    /* #sidebarClose{
-        display: block;
-        width: 80px;
-        text-align: center; 
-    } */
+    
     .sideBar ul h1{
         visibility: visible;
-        font-size: 0.8em;
+        font-size: 0.7em;
         text-align:left;
         margin: 0;
         word-wrap:normal;
@@ -92,7 +86,6 @@ cursor:zoom-out;
       /* list-style: none;
      font-weight: 100; */
     visibility: hidden;
-     
      margin-block: 40%;
      margin-inline: 2%;
      font-size: 1em;
@@ -115,12 +108,14 @@ cursor:zoom-out;
         flex-direction: column;
     }
     .sideBar ul{
-        background-color: rgba(228, 65, 15, 0.603);
+    background-color: white;
         /* width:5%; */
         height: 100%;
         position: fixed;
+        margin-left: 0px;
         left: 0;
         float: left;
+        text-align: none;
         
     }
     /* #sidebarClose{
@@ -164,7 +159,7 @@ cursor:zoom-out;
         flex-direction: column;
     }
     .sideBar ul{
-        background-color: rgba(228, 65, 15, 0.603);
+    background-color: white;
         /* width:5%; */
         height: 100%;
         position: fixed;

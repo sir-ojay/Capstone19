@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-*{
+
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-.sideBar{
+.sideBar {
     display: block;
     font-family: "Open Sans", sans-serif;
-      position: fixed;
+    position: fixed;
     left: 0;
     float: left;
     background-color: red;
-   
+
 }
-.sideBar ul{
-    background-color:white;
+
+.sideBar ul {
+    background-color: rgba(14, 13, 13, 0.575);
     width: 220px;
     height: 100vh;
     position: fixed;
@@ -24,7 +26,7 @@
 
 }
 
-.sideBar ul li{
+.sideBar ul li {
     list-style: none;
     margin-block: 40%;
     /* padding-bottom: 38%; */
@@ -33,172 +35,73 @@
     color: rgb(183, 211, 240);
     font-weight: 500;
 }
-.sideBar ul li:hover{
+
+.sideBar ul li:hover {
     color: rgb(0, 0, 0);
     font-size: 18px;
     background-color: rgba(0, 225, 255, 0);
     transition: all 200ms ease-in-out;
-cursor:zoom-out;
+    cursor: pointer;
 }
 
-.sideBar ul h1{
+.sideBar ul h1 {
     font-size: 24px;
     color: whitesmoke;
-    text-shadow:2px 2px 7px #ed3eee;
+    text-shadow: 2px 2px 7px #ed3eee;
 }
-.icons{
+
+.icons {
     font-size: 20px;
     margin-right: 12px;
     color: rgb(182, 188, 194);
 }
-.icons:hover{
+
+.icons:hover {
     font-size: 25px;
     background-color: rgba(0, 225, 255, 0);
 }
 
 
-@media (max-width: 768px) {
-    #sidebar{
-        display:flex ;
+@media (max-width: 900px) {
+    #sidebar {
+        display: flex;
         flex-direction: column;
     }
-    .sideBar ul{
-    background-color: white; 
-        width:22%;
+
+    .sideBar ul {
+        background-color: rgba(14, 13, 13, 0.575);
+        width: 22%;
         height: 100%;
         position: fixed;
         left: 0;
         float: left;
-        
+
     }
-    
-    .sideBar ul h1{
+
+    .sideBar ul h1 {
         visibility: visible;
         font-size: 0.7em;
-        text-align:left;
+        text-align: left;
         margin: 0;
-        word-wrap:normal;
-         }
-    
-    .sideBar ul li{
-      display: flex;
-      flex-direction: column;
-      /* list-style: none;
-     font-weight: 100; */
-    visibility: hidden;
-     margin-block: 40%;
-     margin-inline: 2%;
-     font-size: 1em;
-     color: rgb(183, 211, 240);
-  
+        word-wrap: normal;
     }
-    .sideBar ul li .icons{
-        visibility: visible;
-        font-size: 1em;
-     text-align: center;
-        color: rgb(45, 166, 214);
-    }
-    /* #topp{
-        margin-top: 70px;
-    } */
-}
-@media (max-width: 500px) {
-    #sidebar{
-        display:flex ;
+
+    .sideBar ul li {
+        display: flex;
         flex-direction: column;
+        visibility: hidden;
+        margin-block: 40%;
+        margin-inline: 2%;
+        font-size: 1em;
+        color: rgb(183, 211, 240);
+
     }
-    .sideBar ul{
-    background-color: white;
-        /* width:5%; */
-        height: 100%;
-        position: fixed;
-        margin-left: 0px;
-        left: 0;
-        float: left;
-        text-align: none;
-        
-    }
-    /* #sidebarClose{
-        display: block;
-        width: 80px;
-        text-align: center; 
-    } */
-    .sideBar ul h1{
-        visibility: visible;
-        font-size: 0.6em;
-        text-align:left;
-        margin: 0;
-        word-wrap:normal;
-         }
-    
-    .sideBar ul li{
-      display: flex;
-      flex-direction: column;
-      /* list-style: none;
-     font-weight: 100; */
-    visibility: hidden;
-     
-     margin-block: 20%;
-     margin-inline: 2%;
-     font-size: 1em;
-     color: rgb(183, 211, 240);
-  
-    }
-    .sideBar ul li .icons{
+
+    .sideBar ul li .icons {
         visibility: visible;
         font-size: 1em;
-        margin-block: 20%;
-     margin-inline: 2%;
-     text-align: center;
+        text-align: center;
         color: rgb(45, 166, 214);
     }
-}
-@media (max-width:400px){
-    #sidebar{
-        display:flex ;
-        flex-direction: column;
-    }
-    .sideBar ul{
-    background-color: white;
-        /* width:5%; */
-        height: 100%;
-        position: fixed;
-        left: 0;
-        float: left;
-        
-    }
-    /* #sidebarClose{
-        display: block;
-        width: 80px;
-        text-align: center; 
-    } */
-    .sideBar ul h1{
-        visibility: visible;
-        font-size: 0.6em;
-        text-align:left;
-        margin: 0;
-        word-wrap:normal;
-         }
-    
-    .sideBar ul li{
-      display: flex;
-      flex-direction: column;
-      /* list-style: none;
-     font-weight: 100; */
-    visibility: hidden;
-     
-     margin-block: 20%;
-     margin-inline: 2%;
-     font-size: 1em;
-     color: rgb(183, 211, 240);
-  
-    }
-    .sideBar ul li .icons{
-        visibility: visible;
-        font-size: 1em;
-        margin-block: 20%;
-     margin-inline: 2%;
-     text-align: center;
-        color: rgb(45, 166, 214);
-    }
+
 }

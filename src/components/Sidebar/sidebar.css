@@ -37,7 +37,7 @@
 }
 
 .sideBar ul li:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(206, 187, 187);
     font-size: 18px;
     background-color: rgba(0, 225, 255, 0);
     transition: all 200ms ease-in-out;
@@ -45,9 +45,9 @@
 }
 
 .sideBar ul h1 {
-    font-size: 24px;
-    color: whitesmoke;
-    text-shadow: 2px 2px 7px #ed3eee;
+    font-size: 22px;
+    color: rgb(206, 187, 187);
+    text-shadow: 2px 2px 7px #1a181a;
 }
 
 .icons {

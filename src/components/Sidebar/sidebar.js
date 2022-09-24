@@ -17,7 +17,7 @@ const Sidebar = () => {
     <div className="sideBar">
       <ul id="sidebar">
         <li>
-          <h1>OJAY CRM</h1>
+          <h1>CORE</h1>
         </li>
         <Link style={{ textDecoration: "none" }} to="/dashboard">
           {" "}
